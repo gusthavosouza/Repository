@@ -9,15 +9,15 @@ public class MyClass {
 		
 		
 		do{
-			Output.println("Digite a sua 1 nota");
+			Output.println("Digite a sua nota na primeira prova. O valor deve estar entre 0 e 10.");
 			nota1= Input.readDouble();
 			
 		}while(nota1<0 || nota1>10);
 
 		do{
-			Output.println("Digite a sua 2 nota");
+			Output.println("Digite a sua nota na segunda prova. O valor deve estar entre 0 e 10.");
 			nota2 = Input.readDouble();
-		}while(nota1<0 && nota1>10);
+		}while(nota2<0 || nota2>10);
 		
 		media = (nota1 + nota2)/2;
 		
