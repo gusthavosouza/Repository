@@ -1,7 +1,7 @@
 Repository
 ==========
 
-<h3>Repositório criado para uso nas aulas de Algoritmo.</h3>
+<h3>Repositório criado para uso nas aulas de Algoritmo e Lab III</h3>
 <h6>Apresentando diferentes soluções nos exercícios propostos!</h6>
 
 Acesse sua pasta, click em criar novo arquivo.
