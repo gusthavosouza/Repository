@@ -30,7 +30,7 @@ public class Aluno {
 	void imprimeSexo()	{
 		if (sexo=='M' || sexo=='m' ){
 			System.out.println("Sexo: Masculino");
-		} else if (sexo=='F' || sexo=='F' ){
+		} else if (sexo=='F' || sexo=='f' ){
 			System.out.println("Sexo: Feminino");
 		}else{
 			System.out.println("Sexo: Desconhecido");
