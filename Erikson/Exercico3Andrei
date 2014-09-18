@@ -1,0 +1,39 @@
+imprimir o menu abaixo:
+
+1 - Solteiro(a)
+2 - Desquitado(a)
+3 - Casado(a)
+4 - Divorciado(a)
+5 - Viúvo(a)
+
+O usuário deverá selecionar uma das opções do menu e este deverá escrever
+o estado civil da pessoa. Emitir mensagem de erro caso seja escolhida uma
+opção inexistente.
+
+
+import jeliot.io.*;
+
+public class MyClass {
+    public static void main() {
+
+int estadoDigitado;
+Output.println("Escolha o número da opção no menu corresponte ao estado civil:");
+	Output.println("1 - Solteiro(a)");
+	Output.println("2 - Desquitado(a)");
+	Output.println("3 - Casado(a)");
+	Output.println("4 - Divorciado(a)");
+	Output.println("5 - Viúvo(a)");
+estadoDigitado=Input.readInt();
+	if (estadoDigitado==1) Output.println("Solteiro(a)");
+	else if (estadoDigitado==2)
+	 Output.println("Desquitado(a)");
+	else if (estadoDigitado==3)
+	 Output.println("Casado(a)");
+	else if (estadoDigitado==4)
+	 Output.println("Divorciado(a)");
+	else if (estadoDigitado==5)
+	 Output.println("Viúvo(a)");
+	 else Output.println("Opção do menu inválida");
+		
+		}
+	}
