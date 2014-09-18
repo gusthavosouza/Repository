@@ -1,0 +1,24 @@
+Exercio 1
+
+//salario/hora
+//numero de horas/mes
+//percentual de desconto
+
+
+import jeliot.io.*;
+
+public class MyClass {
+    public static void main() {
+      
+        double salarioHora, horasMes, descINSS=0.07, pgtoLiq, pgtoBruto;
+
+Output.println("Insira o valor do salário pago por hora, sem descontos.");
+salarioHora=Input.readDouble();
+Output.println("Número de horas trabalhadas mensalmente");
+horasMes=Input.readDouble();
+pgtoBruto=(salarioHora*horasMes);
+pgtoLiq=(pgtoBruto-(pgtoBruto*descINSS));
+Output.println("O valor do salário bruto será de "+pgtoBruto + ". Enquanto o valor do salário pago, após desconto de 7% do INSS será " +pgtoLiq);
+
+    }
+}
