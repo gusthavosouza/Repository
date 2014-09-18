@@ -1,0 +1,28 @@
+//Média das notas: (Nota1 + Nota2 + Nota3) / 3
+//aprovado >6
+//negado <4
+
+import jeliot.io.*;
+
+public class MyClass {
+    public static void main() {
+
+   double nota1, nota2, nota3, media;
+
+   Output.println("Insira o valor da 1a nota.");
+   	nota1=Input.readDouble();
+   Output.println("Insira o valor da 2a nota.");
+   	nota2=Input.readDouble();
+   Output.println("Insira o valor da 3a nota.");
+   	nota3=Input.readDouble();
+   		media=((nota1+nota2+nota3)/3);
+   			Output.println("Sua média é "+media);
+   	if(media>=6) Output.println("Aprovado");
+   	else Output.println("Reprovado");
+
+
+    
+
+
+    }
+    	}
