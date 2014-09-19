@@ -1,0 +1,28 @@
+import jeliot.io.*;
+
+public class MyClass{
+	public static void main(){
+Moto motoca=new Moto("Honda", "cg 350", "verde", 5);
+motoca.imprimir();
+}
+}
+public class Moto {
+	String marca, modelo, cor;
+	int marcha;
+
+	//Construtor	
+Moto(String marca, String modelo, String cor, int marcha){
+this.marca=marca;
+this.modelo=modelo;
+this.cor=cor;
+this.marcha=marcha;
+}
+	
+public void imprimir(){
+	System.out.printl(this.marca);
+	System.out.println(this.modelo);
+	System.out.println(this.cor);
+	System.out.println(this.marcha);
+		}
+
+		}
