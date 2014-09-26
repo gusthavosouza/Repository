@@ -1,0 +1,43 @@
+
+public class Eletrodomestico {
+	boolean estado;
+	
+	public void ligar(){
+		estado=true;
+						
+	}
+	
+public void desligar() {
+	estado=false;
+	
+}
+	
+public  void imprimir(){
+	if(estado)
+		System.out.println("Ligado!");
+	else 
+		System.out.println("Desligado");
+		
+	
+}
+
+Eletrodomestico(boolean estado){
+	this.estado=estado;
+}
+
+public static void main(String[] args){
+	
+	Eletrodomestico eletro = new Eletrodomestico(true);
+	
+	
+
+	eletro.ligar();
+		eletro.imprimir();
+	eletro.desligar();
+		eletro.imprimir();
+	
+
+		
+	}
+
+}
