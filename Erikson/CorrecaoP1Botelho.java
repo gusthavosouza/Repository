@@ -33,10 +33,5 @@ public class Televisor {
 			this.estado=true;
 			return "Ligado";
 		}
-
 	}
-
-
-
 }
-
