@@ -12,40 +12,43 @@ public class Animal {
 String especie, ambiente, cor;
 Double velocidade;
 
+Scanner Teclado = new Scanner(System.in);
+
 	public void alteraEspecie() {
 		System.out.println("Digite a nova especie");
-		especie=Input.readNextline();
+		especie=Teclado.nextLine();
 		System.out.println("Alterou a especie para "+especie);
 		
 	}
 	public void alteraAmbiente( ) {
 		System.out.println("Digite o novo ambiente");
-		ambiente=Input.readNextline();
+		ambiente=Teclado.nextLine();
 		System.out.println("Alterou o ambiente para "+ambiente);
 	}
 	
 	public void alteraCor() {
 			System.out.println("Digite a nova cor");
-		cor=Input.readNextline();
+		cor=Teclado.nextLine();
 		System.out.println("Alterou para a cor: "+cor);
 	}
 	public void alteraVelocidade() {
 			System.out.println("Digite a nova velocidade");
-		velocidade=Input.readNextint();
+		velocidade=Teclado.nextDouble();
 		System.out.println("Alterou para a velocidade: "+velocidade);
 	}
 
 	public void mostraDados() {
-		System.out.println("Caracteristicas do animal "+especie +ambiente +cor +velocidade);
+		System.out.println("Caracteristicas do animal "+especie +" "+ ambiente +" " +cor +" " +velocidade);
 	}
 
 }
+
 class Mamifero extends Animal{
 	String tipo;
 	
 	public void alteraTipo(){
 				System.out.println("Digite o novo tipo");
-		tipo=Input.readNextline();
+		tipo = Teclado.nextLine();
 		System.out.println("Alterou para o tipo: "+tipo);
 	}
 	
@@ -54,12 +57,13 @@ class Mamifero extends Animal{
 	}
 }	
 
+
 class Anfibios extends Animal{
 	String locomocao;
 	
 	public void alteraLocomocao(){
 		System.out.println("Digite a nova locomocao");
-	locomocao=Input.readNextline();
+	locomocao=Teclado.nextLine();
 	System.out.println("Alterou a locomocao para: "+locomocao);
 		}
 	
@@ -73,7 +77,7 @@ class Peixe extends Animal{
 	
 	public void alteraAgua(){
 			System.out.println("Digite a nova locomocao");
-	tipoAgua=Input.readNextline();
+	tipoAgua=Teclado.nextLine();
 		System.out.println("Alterou "+tipoAgua);
 	}
 	public void mostraAgua(){
@@ -81,10 +85,19 @@ class Peixe extends Animal{
 	}
 }
 
-class Teste {
+
+
+
+class Teste  {
 	public static void main(String args[]){
 		Mamifero mama = new Mamifero();
 			mama.alteraTipo();
+			mama.mostraTipo();
+		Animal anim = new Animal();
+			anim.alteraEspecie();
+			anim.alteraCor();
+			anim.alteraVelocidade();
+			anim.mostraDados();
 	}
 	
 	
