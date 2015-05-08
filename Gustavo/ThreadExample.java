@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class ThreadExample {
@@ -22,17 +23,17 @@ public class ThreadExample {
 		// ao chamar o metodo start e executado o metodo run da classe ThreadCalculate
 		t.start();
 
-			// exibi a menssagem digite um numero
-			System.out.println("Digite um numero");
-			// faz a leitura do numeo digitado pelo usuario e guarda o valor na variavel a
-			a = scan.nextInt();
-			// exibi a menssagem digite um numero
-			System.out.println("Digite um numero");
-			// faz a leitura do numeo digitado pelo usuario e guarda o valor na variavel b
-			b = scan.nextInt();
-			
-			// seta os valores para a thread que estava aguardando os dados iniciar o calculo
-			calc.setValues(a, b);
+		// exibi a menssagem digite um numero
+		System.out.println("Digite um numero");
+		// faz a leitura do numeo digitado pelo usuario e guarda o valor na variavel a
+		a = scan.nextInt();
+		// exibi a menssagem digite um numero
+		System.out.println("Digite um numero");
+		// faz a leitura do numeo digitado pelo usuario e guarda o valor na variavel b
+		b = scan.nextInt();
+		
+		// seta os valores para a thread que estava aguardando os dados iniciar o calculos
+		calc.setValues(a, b);
 			
 	}
 }
