@@ -1,3 +1,4 @@
+
 public class ThreadCalculate implements Runnable {
 
 	int a = 0;
@@ -22,7 +23,7 @@ public class ThreadCalculate implements Runnable {
 			synchronized (this) {
 				
 				try {
-			System.out.println("Entrando em estado de espera dos dados");
+			System.out.println("[ThreadCalculate] Entrando em estado de espera dos dados");
 			// apos iniciar a Thread coloca a mesma em estado de espera aguardando a entrada de dados.	
 					wait();
 				} catch (Exception e) {
@@ -31,9 +32,9 @@ public class ThreadCalculate implements Runnable {
 
 			}
 
-			System.out.println("Numeros digitados:" + a + "," + b);
-			System.out.println("Soma dos numeros digitados =" + (a + b));
-			System.out.println("Saindo da thread");
+			System.out.println("[ThreadCalculate] Numeros digitados:" + a + "," + b);
+			System.out.println("[ThreadCalculate] Soma dos numeros digitados =" + (a + b));
+			System.out.println("[ThreadCalculate] Saindo da thread");
 	}
 	
 	public synchronized void destroy () {
