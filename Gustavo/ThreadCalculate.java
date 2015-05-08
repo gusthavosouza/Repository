@@ -37,8 +37,4 @@ public class ThreadCalculate implements Runnable {
 			System.out.println("[ThreadCalculate] Saindo da thread");
 	}
 	
-	public synchronized void destroy () {
-		
-		this.run = false;
-	}
 }
