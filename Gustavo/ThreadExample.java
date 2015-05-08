@@ -21,6 +21,7 @@ public class ThreadExample {
 
 		// inicia a thread
 		// ao chamar o metodo start e executado o metodo run da classe ThreadCalculate
+		// mesmo com a chamada do metodo o restante do codigo continua a ser executado
 		t.start();
 
 		// exibi a menssagem digite um numero 
