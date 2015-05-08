@@ -23,12 +23,12 @@ public class ThreadExample {
 		// ao chamar o metodo start e executado o metodo run da classe ThreadCalculate
 		t.start();
 
-		// exibi a menssagem digite um numero
-		System.out.println("Digite um numero");
+		// exibi a menssagem digite um numero 
+		System.out.println("[ThreadMain] Digite um numero");
 		// faz a leitura do numeo digitado pelo usuario e guarda o valor na variavel a
 		a = scan.nextInt();
 		// exibi a menssagem digite um numero
-		System.out.println("Digite um numero");
+		System.out.println("[ThreadMain] Digite um numero");
 		// faz a leitura do numeo digitado pelo usuario e guarda o valor na variavel b
 		b = scan.nextInt();
 		
